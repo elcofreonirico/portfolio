@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Cofre Onírico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-es">
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('es')">ESPAÑOL</button>
+    <button class="lang-btn" onclick="setLang('en')">ENGLISH</button>
+    <nav class="site-menu">
+      <button class="menu-toggle" aria-label="menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <div class="menu-list">
+        <a href="#menu-section"><span class="es-text">Menú</span><span class="en-text">Menu</span></a>
+        <a href="#services-section"><span class="es-text">Servicios y Clientes</span><span class="en-text">Services and Clients</span></a>
+        <a href="#about-section"><span class="es-text">Sobre mí</span><span class="en-text">About me</span></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="hero-background-image"></div>
+
+  <section id="menu-section">
+    <section class="hero">
+      <div class="hero-logo-placeholder">TU LOGO</div>
+      <h1 class="hero-title">El Cofre Onírico</h1>
+      <p class="hero-subtitle">(The Oniric Chest)</p>
+    </section>
+    <section class="cards-section">
+      <div class="cards-box neon-box">
+        <div class="card"><div class="card-circle-placeholder">TU<br>IMAGEN</div><div class="card-text"><span class="es-text">Instagram</span><span class="en-text">Instagram</span></div></div>
+        <div class="card"><div class="card-circle-placeholder">TU<br>IMAGEN</div><div class="card-text"><span class="es-text">Portafolio</span><span class="en-text">Portfolio</span></div></div>
+      </div>
+    </section>
+  </section>
+
+  <section id="services-section">
+    <div class="section-title"><span class="es-text">Servicios y Clientes</span><span class="en-text">Services and Clients</span></div>
+    <div class="cases-wrapper">
+      <div class="case-row case-left"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">IMG</div><div class="case-title"><span class="es-text">Pedido del cliente</span><span class="en-text">Client request</span></div></div><div class="case-text"><span class="es-text">Texto largo explicando qué pidió el cliente...</span><span class="en-text">Long text explaining what the client requested...</span></div></div></div>
+
+      <div class="case-subtitle"><span class="es-text">Creacion de mascota virtual</span><span class="en-text">Creation of "virtual mascot"</span></div>
+      <div class="service-pair">
+        <section class="service-scene service-vertical"><div class="front-hand left-bottom">MANO<br>COMPLETA</div><div class="service-box neon-box"><div class="video-placeholder"><span class="es-text">VIDEO</span><span class="en-text">VIDEO</span></div></div></section>
+        <section class="service-scene service-horizontal"><div class="front-hand right-middle">MANO<br>COMPLETA</div><div class="service-box neon-box"><div class="video-placeholder"><span class="es-text">VIDEO</span><span class="en-text">VIDEO</span></div></div></section>
+      </div>
+
+      <div class="case-row case-right"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">LOGO</div><div class="case-title">El Cofre Onírico</div></div><div class="case-text"><span class="es-text">Texto donde explicás por qué brindaste ese servicio...</span><span class="en-text">Text explaining why you provided that service...</span></div></div></div>
+
+      <div class="case-subtitle case-subtitle--wide"><span class="es-text">Diseño de posters y cuadernos</span><span class="en-text">Poster and notebook design</span></div>
+      <section class="single-service"><div class="service-scene"><div class="hand-back">MANO<br>ATRÁS</div><div class="service-box neon-box"><div class="image-carousel-placeholder"><div class="carousel-track" id="carousel-track"><div class="carousel-image-placeholder">IMG 1</div><div class="carousel-image-placeholder">IMG 2</div><div class="carousel-image-placeholder">IMG 3</div><div class="carousel-image-placeholder">IMG 4</div></div><button class="carousel-btn left" onclick="moveCarousel(-1)">‹</button><button class="carousel-btn right" onclick="moveCarousel(1)">›</button></div><div class="service-caption"><span class="es-text">Diseños de cuadernos para Tomomono.Design</span><span class="en-text">Notebook designs for Tomomono.Design</span></div></div><div class="finger-front">DEDO<br>ADELANTE</div></div></section>
+    </div>
+  </section>
+
+  <div class="case-row case-right"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">LOGO</div><div class="case-title">El Cofre Onírico</div></div><div class="case-text"><span class="es-text">Texto final donde cerrás la sección o adelantás lo que viene...</span><span class="en-text">Final text to close the section or preview what's next...</span></div></div></div>
+
+  <div class="case-subtitle case-subtitle--wide"><span class="es-text">Video para redes sociales</span><span class="en-text">Social media video</span></div>
+  <section class="single-service video-final" style="padding-bottom:40px; transform:scale(0.62); transform-origin:center top;"><div class="service-scene service-vertical"><div class="hand-back-large"></div><div class="service-box neon-box"><div class="video-placeholder"><span class="es-text">VIDEO</span><span class="en-text">VIDEO</span></div></div></div></section>
+
+  <div class="case-row case-left multi-clients"><div class="case-box neon-box"><div class="multi-clients-inner">
+    <div><div class="case-header"><div class="case-avatar">IMG</div><div class="case-title">Tomomono.design</div></div><div class="case-text">También necesitamos promocionar productos que aún no han sido fabricados, con el objetivo de producirlos bajo demanda una vez recibidos los pedidos.</div></div>
+    <div><div class="case-header"><div class="case-avatar">IMG</div><div class="case-title">Los Drudels</div></div><div class="case-text">Somos una empresa dedicada a la venta de ropa y otros productos infantiles. Contamos con personajes propios que utilizamos en nuestros productos.<br><br>Disponemos de los productos ya producidos y necesitamos incorporar fondos que sean coherentes con nuestra estética y estilo visual.</div></div>
+    <div><div class="case-header"><div class="case-avatar">IMG</div><div class="case-title">STS (Son Todas Suposiciones)</div></div><div class="case-text">Nos dedicamos a la organización de eventos, espacios y encuentros creativos vinculados a la música, el teatro, el cine y otras disciplinas. Buscamos mantener una estética neutra y minimalista en toda nuestra comunicación.<br><br>Contamos con merchandising de la marca que necesitamos promocionar respetando este estilo visual.</div></div>
+  </div></div></div>
+
+  <div class="case-subtitle case-subtitle--wide"><span class="es-text">Mock up para redes sociales</span><span class="en-text">Social media mockups</span></div>
+  <section class="single-service"><div class="service-scene"><div class="hand-back">MANO<br>ATRÁS</div><div class="service-box neon-box carousel-4-5"><div class="image-carousel-placeholder"><div class="carousel-track" id="carousel-track-mockups"><div class="carousel-image-placeholder">IMG 1</div><div class="carousel-image-placeholder">IMG 2</div><div class="carousel-image-placeholder">IMG 3</div><div class="carousel-image-placeholder">IMG 4</div><div class="carousel-image-placeholder">IMG 5</div><div class="carousel-image-placeholder">IMG 6</div><div class="carousel-image-placeholder">IMG 7</div><div class="carousel-image-placeholder">IMG 8</div></div><button class="carousel-btn left" onclick="moveMockupCarousel(-1)">‹</button><button class="carousel-btn right" onclick="moveMockupCarousel(1)">›</button></div><div class="service-caption"><span class="es-text">“mock ups” para Tomomono, Los Drudels y STS</span><span class="en-text">Mockups for Tomomono, Los Drudels and STS</span></div></div><div class="finger-front">DEDO<br>ADELANTE</div></div></section>
+
+  <div class="case-row case-right"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">LOGO</div><div class="case-title">El Cofre Onírico</div></div><div class="case-text"><span class="es-text">Texto donde explicás las decisiones creativas y visuales detrás de los mock ups...</span><span class="en-text">Text explaining the creative and visual decisions behind the mockups...</span></div></div></div>
+
+  <div class="case-subtitle case-subtitle--wide"><span class="es-text">Diseño para redes sociales</span><span class="en-text">Social media design</span></div>
+  <section class="single-service social-design-service"><div class="service-scene"><div class="bottom-wide-hand"></div><div class="service-box neon-box"><div class="image-carousel-placeholder"><div class="carousel-track" id="carousel-track-social"><div class="carousel-image-placeholder">IMG 1</div><div class="carousel-image-placeholder">IMG 2</div><div class="carousel-image-placeholder">IMG 3</div><div class="carousel-image-placeholder">IMG 4</div></div><button class="carousel-btn left" onclick="moveSocialCarousel(-1)">‹</button><button class="carousel-btn right" onclick="moveSocialCarousel(1)">›</button></div><div class="service-caption"><span class="es-text">Ejemplos de diseño para publicaciones y carruseles para redes sociales.</span><span class="en-text">Examples of social media posts and carousel designs.</span></div></div></div></section>
+
+  <div class="case-row case-right"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">LOGO</div><div class="case-title">El Cofre Onírico</div></div><div class="case-text"><span class="es-text">Texto donde explicás decisiones visuales, composición y coherencia estética para redes sociales...</span><span class="en-text">Text explaining visual decisions, composition and aesthetic consistency for social media...</span></div></div></div>
+
+  <div class="case-subtitle case-subtitle--wide"><span class="es-text">Diseño miniaturas</span><span class="en-text">Thumbnail design</span></div>
+  <section class="single-service thumbnails-service"><div class="service-scene"><div class="thumb-back"></div><div class="service-box neon-box"><div class="image-carousel-placeholder"><div class="carousel-track" id="carousel-track-thumbnails"><div class="carousel-image-placeholder">IMG 1</div><div class="carousel-image-placeholder">IMG 2</div><div class="carousel-image-placeholder">IMG 3</div></div><button class="carousel-btn left" onclick="moveThumbnailCarousel(-1)">‹</button><button class="carousel-btn right" onclick="moveThumbnailCarousel(1)">›</button></div><div class="service-caption"><span class="es-text">Ejemplos de diseños para miniaturas para Youtube o similares.</span><span class="en-text">Examples of thumbnail designs for YouTube or similar platforms.</span></div></div><div class="thumb-front"></div></div></section>
+
+  <div class="case-row case-left"><div class="case-box neon-box"><div class="case-header"><div class="case-avatar">IMG</div><div class="case-title"><span class="es-text">Pedido del cliente</span><span class="en-text">Client request</span></div></div><div class="case-text"><span class="es-text">Texto del cliente para continuar con la siguiente sección del portafolio...</span><span class="en-text">Client text to continue with the next section of the portfolio...</span></div></div></div>
+
+  <div class="about-spacer"></div>
+  <section id="about-section"><div class="section-title"><span class="es-text">Sobre mí</span><span class="en-text">About me</span></div></section>
+  <section class="about-block"><div class="about-inner"><div class="about-photo">FOTO<br>PLACEHOLDER</div><div class="neon-box about-text-box"><div><h3><span class="es-text">Sobre mí</span><span class="en-text">About me</span></h3><span class="es-text">Texto sobre vos, tu estilo visual, enfoque creativo y forma de trabajar...</span><span class="en-text">Text about you, your visual style, creative approach and workflow...</span></div></div></div></section>
+
+  <section id="cv-section" class="cv-section"><div class="cv-box neon-box"><iframe class="cv-viewer cv-es" src="cv/cv-es.pdf#toolbar=0" title="CV en español"></iframe><iframe class="cv-viewer cv-en" src="cv/cv-en.pdf#toolbar=0" title="CV in English"></iframe><div class="cv-download-wrap"><a id="cv-download" class="cv-download-btn" href="cv/cv-es.pdf" download><span class="es-text">Descargar CV</span><span class="en-text">Download CV</span></a></div></div></section>
+
+  <div class="back-top"><a href="#menu-section" class="restart-animations"><span class="es-text">Volver al inicio</span><span class="en-text">Back to top</span></a><a href="#menu-section" class="restart-animations back-img">IMG</a></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
