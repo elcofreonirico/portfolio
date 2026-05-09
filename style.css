@@ -4,7 +4,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body { background:#000; color:#fff; font-family:Georgia,serif; min-height:100vh; overflow-x:hidden; position:relative; z-index:1; }
 .hero-background-image{
     position: absolute;
-  top: 421px;
+  top: 420px;
   left: 50%;
   transform: translateX(-50%);
   width: 460px;
