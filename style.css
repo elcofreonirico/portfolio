@@ -8,7 +8,7 @@ body { background:#000; color:#fff; font-family:Georgia,serif; min-height:100vh;
   left: 50%;
   transform: translateX(-50%);
   width: 460;
-  height: 1000;
+  height: 1500;
   background-image: url('imagenes/recursos/fondo.png');
   background-size: cover;
   background-position: top center;
