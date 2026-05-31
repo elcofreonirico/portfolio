@@ -1,0 +1,15 @@
+/* Este archivo es solo de referencia. Para aplicar el cambio real necesito editar style.css completo.
+
+Cambio buscado en style.css:
+
+.case-text{
+  font-family: Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: #fff;
+  text-align: left;
+}
+
+Actualmente está:
+.case-text{font-family:Georgia,serif;font-size:.95rem;line-height:1.6;color:rgba(255,255,255,.85);text-align:center}
+*/
