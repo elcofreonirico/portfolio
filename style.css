@@ -114,3 +114,13 @@ body.lang-en .cv-download-btn.cv-en {
   object-fit: contain;
   display: block;
 }
+
+.cv-viewer{
+  width:100%;
+  max-width:620px;
+  height:auto;
+  display:block;
+  border-radius:4px;
+  background:#111;
+  border:none;
+}
