@@ -85,8 +85,13 @@ body { background:#0A0A0A; color:#fff; font-family:Georgia,serif; min-height:100
 .cv-section{padding:20px 24px 100px;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .cv-box{width:min(92vw,640px);max-width:94vw;padding:4px;display:flex;flex-direction:column;align-items:center;gap:10px}
 .cv-viewer{width:min(100%,620px);aspect-ratio:210/297;height:auto;border:none;border-radius:4px;background:#111}
-body.lang-es .cv-es{display:block}.cv-en{display:none}
-body.lang-en .cv-es{display:none}.cv-en{display:block}
+
+body.lang-es .cv-viewer.cv-es{display:block}
+body.lang-es .cv-viewer.cv-en{display:none}
+
+body.lang-en .cv-viewer.cv-es{display:none}
+body.lang-en .cv-viewer.cv-en{display:block}
+
 .cv-download-wrap{text-align:center;margin-top:-2px}
 .cv-download-btn{display:inline-block;margin-top:4px;padding:12px 22px;border:2px solid #fff;border-radius:4px;color:#fff;text-decoration:none;font-family:Impact,sans-serif;letter-spacing:1.5px;box-shadow:0 0 10px var(--red-neon),0 0 22px var(--red-glow)}
 .cv-download-btn:hover{text-shadow:0 0 8px #fff}
