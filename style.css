@@ -101,3 +101,16 @@ body.lang-es .cv-download-btn.cv-es {
 body.lang-en .cv-download-btn.cv-en {
   display: inline-block;
 }
+
+.back-img {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.back-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
