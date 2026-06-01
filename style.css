@@ -124,3 +124,31 @@ body.lang-en .cv-download-btn.cv-en {
   background:#111;
   border:none;
 }
+
+body.lang-es .cv-viewer.cv-en {
+  display: none;
+}
+
+body.lang-en .cv-viewer.cv-es {
+  display: none;
+}
+
+body.lang-es .cv-viewer.cv-es {
+  display: block;
+}
+
+body.lang-en .cv-viewer.cv-en {
+  display: block;
+}
+
+@media(max-width:720px){
+  .about-inner{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text-box{
+    width: 100%;
+    max-width: 92vw;
+  }
+}
