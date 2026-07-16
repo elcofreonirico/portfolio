@@ -138,3 +138,11 @@ body.lang-en .cv-download-btn.cv-en{display:inline-block}
 .video-final .image-carousel-placeholder,.video-final .carousel-track{height:100%}
 .video-final .video-carousel-slide{height:100%;aspect-ratio:9/16}
 .video-final .video-carousel-slide .embedded-video{width:100%;height:100%;transform:none}
+
+/* Enlace de Instagram en el carrusel de videos */
+.video-final .service-box{aspect-ratio:auto;height:auto}
+.video-final .image-carousel-placeholder{height:auto;aspect-ratio:9/16}
+.video-final .video-carousel-slide{height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.video-final .video-carousel-slide .embedded-video{height:auto;aspect-ratio:9/16;flex:1}
+.video-instagram-link{display:block;padding:12px 8px 4px;color:#fff;text-align:center;text-decoration:none;font-family:Georgia,serif;font-size:.95rem;line-height:1.2;text-shadow:0 0 8px rgba(255,255,255,.7)}
+.video-instagram-link:hover{text-decoration:underline}
