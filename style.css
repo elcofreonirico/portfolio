@@ -147,3 +147,9 @@ body.lang-en .cv-download-btn.cv-en{display:inline-block}
 .video-instagram-link{display:block;padding:12px 8px 4px;color:#fff;text-align:center;text-decoration:none;font-family:Georgia,serif;font-size:.95rem;line-height:1.2;text-shadow:0 0 8px rgba(255,255,255,.7)}
 .video-instagram-link:hover{text-decoration:underline}
 
+
+/* Carrusel de videos de creación de mascota virtual */
+.mascot-video-carousel .image-carousel-placeholder,.mascot-video-carousel .carousel-track,.mascot-video-carousel .video-carousel-slide{height:100%}
+.mascot-video-carousel .video-carousel-slide{aspect-ratio:auto}
+.mascot-video-carousel .embedded-video{width:100%;height:104%;transform:translateY(-2%)}
+.mascot-video-carousel .carousel-btn{z-index:5}
