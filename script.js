@@ -15,3 +15,5 @@ let socialIndex=0;function moveSocialCarousel(dir){const track=document.getEleme
 let thumbnailIndex=0;function moveThumbnailCarousel(dir){const track=document.getElementById('carousel-track-thumbnails');const total=track.children.length;thumbnailIndex+=dir;if(thumbnailIndex<0)thumbnailIndex=total-1;if(thumbnailIndex>=total)thumbnailIndex=0;track.style.transform=`translateX(-${thumbnailIndex*100}%)`;}
 
 let videoIndex=0;function moveVideoCarousel(dir){const track=document.getElementById('carousel-track-videos');const total=track.children.length;videoIndex+=dir;if(videoIndex<0)videoIndex=total-1;if(videoIndex>=total)videoIndex=0;track.style.transform=`translateX(-${videoIndex*100}%)`;}
+
+let mascotIndex=0;function moveMascotCarousel(dir){const track=document.getElementById('carousel-track-mascot');const total=track.children.length;mascotIndex+=dir;if(mascotIndex<0)mascotIndex=total-1;if(mascotIndex>=total)mascotIndex=0;track.style.transform=`translateX(-${mascotIndex*100}%)`;}
