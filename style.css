@@ -153,3 +153,7 @@ body.lang-en .cv-download-btn.cv-en{display:inline-block}
 .mascot-video-carousel .video-carousel-slide{aspect-ratio:auto}
 .mascot-video-carousel .embedded-video{width:100%;height:104%;transform:translateY(-2%)}
 .mascot-video-carousel .carousel-btn{z-index:5}
+
+/* Botón de acceso al CV y contacto */
+.portfolio-cta{display:block;width:100%;margin-top:2px;padding:14px 18px;border:2px solid #fff;border-radius:8px;background:rgba(255,255,255,.06);color:#fff;text-align:center;text-decoration:none;font-family:Impact,sans-serif;font-size:1.15rem;letter-spacing:1.2px;box-shadow:0 0 10px var(--red-neon),0 0 22px var(--red-glow);transition:background .2s ease,transform .2s ease,text-shadow .2s ease}
+.portfolio-cta:hover{background:rgba(255,255,255,.12);transform:translateY(-2px);text-shadow:0 0 8px #fff}
