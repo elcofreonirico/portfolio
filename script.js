@@ -17,3 +17,25 @@ let thumbnailIndex=0;function moveThumbnailCarousel(dir){const track=document.ge
 let videoIndex=0;function moveVideoCarousel(dir){const track=document.getElementById('carousel-track-videos');const total=track.children.length;videoIndex+=dir;if(videoIndex<0)videoIndex=total-1;if(videoIndex>=total)videoIndex=0;track.style.transform=`translateX(-${videoIndex*100}%)`;}
 
 let mascotIndex=0;function moveMascotCarousel(dir){const track=document.getElementById('carousel-track-mascot');const total=track.children.length;mascotIndex+=dir;if(mascotIndex<0)mascotIndex=total-1;if(mascotIndex>=total)mascotIndex=0;track.style.transform=`translateX(-${mascotIndex*100}%)`;}
+
+
+// Detiene el Short de mockup al finalizar para evitar el bucle propio de YouTube.
+(function(){
+  const apiScript=document.createElement('script');
+  apiScript.src='https://www.youtube.com/iframe_api';
+  document.head.appendChild(apiScript);
+
+  window.onYouTubeIframeAPIReady=function(){
+    const iframe=document.getElementById('mockup-video-no-loop');
+    if(!iframe)return;
+    new YT.Player(iframe,{
+      events:{
+        onStateChange:function(event){
+          if(event.data===YT.PlayerState.ENDED){
+            event.target.stopVideo();
+          }
+        }
+      }
+    });
+  };
+})();
